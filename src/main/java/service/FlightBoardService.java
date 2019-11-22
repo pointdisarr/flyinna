@@ -1,12 +1,11 @@
 package service;
 
-import DAO.DAOcity;
+
 import DAO.DAOflight;
 import console.Console;
 import console.SystemConsole;
 import entity.Flight;
 
-import java.io.FileNotFoundException;
 
 public class FlightBoardService {
     DAOflight daOflight = new DAOflight();

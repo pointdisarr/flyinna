@@ -25,7 +25,7 @@ public class Core {
         this.menu = new Menu();
         this.parser = new Parser();
         this.flightController = new FlightController();
-        this.bookingController = new BookingController();
+        this.bookingController = new BookingController(console);
         this.mainController = new MainController();
     }
 

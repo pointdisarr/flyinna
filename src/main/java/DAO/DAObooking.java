@@ -17,6 +17,7 @@ public class DAObooking implements DAO {
     static ArrayList<String> myBookings = new ArrayList<>();
     Console console = new SystemConsole();
     ArrayList<String> bookings = new ArrayList<>();
+    private static final File file = new File(wPath);
 
 
     public static void load() {
@@ -34,7 +35,10 @@ public class DAObooking implements DAO {
 
     }
 
-    public static void create() {
+    public static void create() throws IOException {
+        if (!file.exists()) {
+            file.createNewFile();
+        }
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(wPath))) {
             if (myBookings.size() != 0) {
                 myBookings.forEach(c -> {

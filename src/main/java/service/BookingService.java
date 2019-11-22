@@ -62,8 +62,10 @@ public class BookingService {
         }
     }
 
-    public void addBooking(int bookedId, int tickets) {
+    public void addBooking(int bookedId, int tickets, String userName) {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(wPath))) {
+           bufferedWriter.write("[" + userName + "]  ");
+
             Set<Integer> keys = mapFound.keySet();
             for (int i : keys) {
                 if (i == bookedId) {

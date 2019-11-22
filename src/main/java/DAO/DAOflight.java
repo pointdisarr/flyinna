@@ -14,6 +14,7 @@ import java.util.Random;
 
 
 public class DAOflight implements DAO {
+
     private final String rPath = "src/main/destCities.txt";
     private final String pRath = "src/main/srcCities.txt";
     private final String wPath = "src/main/flightboard.txt";
@@ -27,7 +28,7 @@ public class DAOflight implements DAO {
     private int flightId = 0;
 
     public DAOflight() {
-        if (flights.size() <= 0) {
+        if (flights.size() == 0) {
             load();
         }
     }
