@@ -10,7 +10,7 @@ public class Menu {
         sb.append("| 2. Find the flight   |\n");
         sb.append("| 3. Search and book   |\n");
         sb.append("| 4. My Bookings       |\n");
-        sb.append("| 5. Cancel a Booking |\n");
+        sb.append("| 5. Cancel Booking    |\n");
         sb.append("| 6. Exit              |\n");
         sb.append("========================\n");
         return sb.toString();
