@@ -57,8 +57,7 @@ public class Core {
                 case MY_BOOKINGS:
                     bookingController.showBookings();
 
-//                case CANCEL_BOOK:
-//                    bookingController.remove();
+
 
                 case EXIT:
                     cont = false;
